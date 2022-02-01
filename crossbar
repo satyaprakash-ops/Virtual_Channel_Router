@@ -1,0 +1,271 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "D:\iverilog\lib\ivl\system.vpi";
+:vpi_module "D:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "D:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "D:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "D:\iverilog\lib\ivl\va_math.vpi";
+S_0000022b813eeac0 .scope module, "crossbar" "crossbar" 2 21;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "core_req_to_core";
+    .port_info 1 /INPUT 1 "core_req_to_link1";
+    .port_info 2 /INPUT 1 "core_req_to_link2";
+    .port_info 3 /INPUT 1 "core_req_to_link3";
+    .port_info 4 /INPUT 1 "core_req_to_link4";
+    .port_info 5 /OUTPUT 1 "core_gnt_from_link1";
+    .port_info 6 /OUTPUT 1 "core_gnt_from_link2";
+    .port_info 7 /OUTPUT 1 "core_gnt_from_link3";
+    .port_info 8 /OUTPUT 1 "core_gnt_from_link4";
+    .port_info 9 /INPUT 1 "link1_req_to_core";
+    .port_info 10 /INPUT 1 "link1_req_to_link1";
+    .port_info 11 /INPUT 1 "link1_req_to_link2";
+    .port_info 12 /INPUT 1 "link1_req_to_link3";
+    .port_info 13 /INPUT 1 "link1_req_to_link4";
+    .port_info 14 /OUTPUT 1 "link1_gnt_from_core";
+    .port_info 15 /OUTPUT 1 "link1_gnt_from_link2";
+    .port_info 16 /OUTPUT 1 "link1_gnt_from_link3";
+    .port_info 17 /OUTPUT 1 "link1_gnt_from_link4";
+    .port_info 18 /INPUT 1 "link2_req_to_core";
+    .port_info 19 /INPUT 1 "link2_req_to_link1";
+    .port_info 20 /INPUT 1 "link2_req_to_link2";
+    .port_info 21 /INPUT 1 "link2_req_to_link3";
+    .port_info 22 /INPUT 1 "link2_req_to_link4";
+    .port_info 23 /OUTPUT 1 "link2_gnt_from_core";
+    .port_info 24 /OUTPUT 1 "link2_gnt_from_link1";
+    .port_info 25 /OUTPUT 1 "link2_gnt_from_link3";
+    .port_info 26 /OUTPUT 1 "link2_gnt_from_link4";
+    .port_info 27 /INPUT 1 "link3_req_to_core";
+    .port_info 28 /INPUT 1 "link3_req_to_link1";
+    .port_info 29 /INPUT 1 "link3_req_to_link2";
+    .port_info 30 /INPUT 1 "link3_req_to_link3";
+    .port_info 31 /INPUT 1 "link3_req_to_link4";
+    .port_info 32 /OUTPUT 1 "link3_gnt_from_core";
+    .port_info 33 /OUTPUT 1 "link3_gnt_from_link1";
+    .port_info 34 /OUTPUT 1 "link3_gnt_from_link2";
+    .port_info 35 /OUTPUT 1 "link3_gnt_from_link4";
+    .port_info 36 /INPUT 1 "link4_req_to_core";
+    .port_info 37 /INPUT 1 "link4_req_to_link1";
+    .port_info 38 /INPUT 1 "link4_req_to_link2";
+    .port_info 39 /INPUT 1 "link4_req_to_link3";
+    .port_info 40 /INPUT 1 "link4_req_to_link4";
+    .port_info 41 /OUTPUT 1 "link4_gnt_from_core";
+    .port_info 42 /OUTPUT 1 "link4_gnt_from_link1";
+    .port_info 43 /OUTPUT 1 "link4_gnt_from_link2";
+    .port_info 44 /OUTPUT 1 "link4_gnt_from_link3";
+    .port_info 45 /INPUT 1 "core_gnt_to_link1";
+    .port_info 46 /INPUT 1 "core_gnt_to_link2";
+    .port_info 47 /INPUT 1 "core_gnt_to_link3";
+    .port_info 48 /INPUT 1 "core_gnt_to_link4";
+    .port_info 49 /OUTPUT 1 "core_req_from_link1";
+    .port_info 50 /OUTPUT 1 "core_req_from_link2";
+    .port_info 51 /OUTPUT 1 "core_req_from_link3";
+    .port_info 52 /OUTPUT 1 "core_req_from_link4";
+    .port_info 53 /INPUT 1 "link1_gnt_to_core";
+    .port_info 54 /INPUT 1 "link1_gnt_to_link2";
+    .port_info 55 /INPUT 1 "link1_gnt_to_link3";
+    .port_info 56 /INPUT 1 "link1_gnt_to_link4";
+    .port_info 57 /OUTPUT 1 "link1_req_from_core";
+    .port_info 58 /OUTPUT 1 "link1_req_from_link2";
+    .port_info 59 /OUTPUT 1 "link1_req_from_link3";
+    .port_info 60 /OUTPUT 1 "link1_req_from_link4";
+    .port_info 61 /INPUT 1 "link2_gnt_to_core";
+    .port_info 62 /INPUT 1 "link2_gnt_to_link1";
+    .port_info 63 /INPUT 1 "link2_gnt_to_link3";
+    .port_info 64 /INPUT 1 "link2_gnt_to_link4";
+    .port_info 65 /OUTPUT 1 "link2_req_from_core";
+    .port_info 66 /OUTPUT 1 "link2_req_from_link1";
+    .port_info 67 /OUTPUT 1 "link2_req_from_link3";
+    .port_info 68 /OUTPUT 1 "link2_req_from_link4";
+    .port_info 69 /INPUT 1 "link3_gnt_to_core";
+    .port_info 70 /INPUT 1 "link3_gnt_to_link1";
+    .port_info 71 /INPUT 1 "link3_gnt_to_link2";
+    .port_info 72 /INPUT 1 "link3_gnt_to_link4";
+    .port_info 73 /OUTPUT 1 "link3_req_from_core";
+    .port_info 74 /OUTPUT 1 "link3_req_from_link1";
+    .port_info 75 /OUTPUT 1 "link3_req_from_link2";
+    .port_info 76 /OUTPUT 1 "link3_req_from_link4";
+    .port_info 77 /INPUT 1 "link4_gnt_to_core";
+    .port_info 78 /INPUT 1 "link4_gnt_to_link1";
+    .port_info 79 /INPUT 1 "link4_gnt_to_link2";
+    .port_info 80 /INPUT 1 "link4_gnt_to_link3";
+    .port_info 81 /OUTPUT 1 "link4_req_from_core";
+    .port_info 82 /OUTPUT 1 "link4_req_from_link1";
+    .port_info 83 /OUTPUT 1 "link4_req_from_link2";
+    .port_info 84 /OUTPUT 1 "link4_req_from_link3";
+o0000022b8130a638 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b8135ff30 .functor BUFZ 1, o0000022b8130a638, C4<0>, C4<0>, C4<0>;
+o0000022b8130a668 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812f4710 .functor BUFZ 1, o0000022b8130a668, C4<0>, C4<0>, C4<0>;
+o0000022b8130a698 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812f4780 .functor BUFZ 1, o0000022b8130a698, C4<0>, C4<0>, C4<0>;
+o0000022b8130a6c8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81309bd0 .functor BUFZ 1, o0000022b8130a6c8, C4<0>, C4<0>, C4<0>;
+o0000022b8130a938 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81309c40 .functor BUFZ 1, o0000022b8130a938, C4<0>, C4<0>, C4<0>;
+o0000022b8130a998 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81309cb0 .functor BUFZ 1, o0000022b8130a998, C4<0>, C4<0>, C4<0>;
+o0000022b8130a9c8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81309d20 .functor BUFZ 1, o0000022b8130a9c8, C4<0>, C4<0>, C4<0>;
+o0000022b8130a9f8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81309d90 .functor BUFZ 1, o0000022b8130a9f8, C4<0>, C4<0>, C4<0>;
+o0000022b8130ac68 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81309e00 .functor BUFZ 1, o0000022b8130ac68, C4<0>, C4<0>, C4<0>;
+o0000022b8130ac98 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81309e70 .functor BUFZ 1, o0000022b8130ac98, C4<0>, C4<0>, C4<0>;
+o0000022b8130acf8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81309ee0 .functor BUFZ 1, o0000022b8130acf8, C4<0>, C4<0>, C4<0>;
+o0000022b8130ad28 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812c2ab0 .functor BUFZ 1, o0000022b8130ad28, C4<0>, C4<0>, C4<0>;
+o0000022b8130af98 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812c2b90 .functor BUFZ 1, o0000022b8130af98, C4<0>, C4<0>, C4<0>;
+o0000022b8130afc8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812c2b20 .functor BUFZ 1, o0000022b8130afc8, C4<0>, C4<0>, C4<0>;
+o0000022b8130aff8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812c2c80 .functor BUFZ 1, o0000022b8130aff8, C4<0>, C4<0>, C4<0>;
+o0000022b8130b058 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812c2c00 .functor BUFZ 1, o0000022b8130b058, C4<0>, C4<0>, C4<0>;
+o0000022b8130b2c8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812c2d80 .functor BUFZ 1, o0000022b8130b2c8, C4<0>, C4<0>, C4<0>;
+o0000022b8130b2f8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b812c2cf0 .functor BUFZ 1, o0000022b8130b2f8, C4<0>, C4<0>, C4<0>;
+o0000022b8130b328 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360300 .functor BUFZ 1, o0000022b8130b328, C4<0>, C4<0>, C4<0>;
+o0000022b8130b358 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b813603e0 .functor BUFZ 1, o0000022b8130b358, C4<0>, C4<0>, C4<0>;
+o0000022b8130a7b8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b8135fff0 .functor BUFZ 1, o0000022b8130a7b8, C4<0>, C4<0>, C4<0>;
+o0000022b8130aae8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360450 .functor BUFZ 1, o0000022b8130aae8, C4<0>, C4<0>, C4<0>;
+o0000022b8130ae18 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360290 .functor BUFZ 1, o0000022b8130ae18, C4<0>, C4<0>, C4<0>;
+o0000022b8130b148 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b813600d0 .functor BUFZ 1, o0000022b8130b148, C4<0>, C4<0>, C4<0>;
+o0000022b8130a488 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b813604c0 .functor BUFZ 1, o0000022b8130a488, C4<0>, C4<0>, C4<0>;
+o0000022b8130ab18 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360530 .functor BUFZ 1, o0000022b8130ab18, C4<0>, C4<0>, C4<0>;
+o0000022b8130ae48 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360370 .functor BUFZ 1, o0000022b8130ae48, C4<0>, C4<0>, C4<0>;
+o0000022b8130b178 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b813605a0 .functor BUFZ 1, o0000022b8130b178, C4<0>, C4<0>, C4<0>;
+o0000022b8130a4b8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b813606f0 .functor BUFZ 1, o0000022b8130a4b8, C4<0>, C4<0>, C4<0>;
+o0000022b8130a7e8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360610 .functor BUFZ 1, o0000022b8130a7e8, C4<0>, C4<0>, C4<0>;
+o0000022b8130ae78 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360680 .functor BUFZ 1, o0000022b8130ae78, C4<0>, C4<0>, C4<0>;
+o0000022b8130b1a8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360060 .functor BUFZ 1, o0000022b8130b1a8, C4<0>, C4<0>, C4<0>;
+o0000022b8130a4e8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360140 .functor BUFZ 1, o0000022b8130a4e8, C4<0>, C4<0>, C4<0>;
+o0000022b8130a818 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b813601b0 .functor BUFZ 1, o0000022b8130a818, C4<0>, C4<0>, C4<0>;
+o0000022b8130ab48 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360220 .functor BUFZ 1, o0000022b8130ab48, C4<0>, C4<0>, C4<0>;
+o0000022b8130b1d8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360aa0 .functor BUFZ 1, o0000022b8130b1d8, C4<0>, C4<0>, C4<0>;
+o0000022b8130a518 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81361360 .functor BUFZ 1, o0000022b8130a518, C4<0>, C4<0>, C4<0>;
+o0000022b8130a848 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360bf0 .functor BUFZ 1, o0000022b8130a848, C4<0>, C4<0>, C4<0>;
+o0000022b8130ab78 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81361590 .functor BUFZ 1, o0000022b8130ab78, C4<0>, C4<0>, C4<0>;
+o0000022b8130aea8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000022b81360c60 .functor BUFZ 1, o0000022b8130aea8, C4<0>, C4<0>, C4<0>;
+v0000022b813048b0_0 .net "core_gnt_from_link1", 0 0, L_0000022b8135fff0;  1 drivers
+v0000022b81304950_0 .net "core_gnt_from_link2", 0 0, L_0000022b81360450;  1 drivers
+v0000022b8135d6f0_0 .net "core_gnt_from_link3", 0 0, L_0000022b81360290;  1 drivers
+v0000022b8135d790_0 .net "core_gnt_from_link4", 0 0, L_0000022b813600d0;  1 drivers
+v0000022b8135be90_0 .net "core_gnt_to_link1", 0 0, o0000022b8130a488;  0 drivers
+v0000022b8135bcb0_0 .net "core_gnt_to_link2", 0 0, o0000022b8130a4b8;  0 drivers
+v0000022b8135d8d0_0 .net "core_gnt_to_link3", 0 0, o0000022b8130a4e8;  0 drivers
+v0000022b8135ced0_0 .net "core_gnt_to_link4", 0 0, o0000022b8130a518;  0 drivers
+v0000022b8135c070_0 .net "core_req_from_link1", 0 0, L_0000022b81309c40;  1 drivers
+v0000022b8135dab0_0 .net "core_req_from_link2", 0 0, L_0000022b81309e00;  1 drivers
+v0000022b8135d970_0 .net "core_req_from_link3", 0 0, L_0000022b812c2b90;  1 drivers
+v0000022b8135c9d0_0 .net "core_req_from_link4", 0 0, L_0000022b812c2d80;  1 drivers
+o0000022b8130a608 .functor BUFZ 1, C4<z>; HiZ drive
+v0000022b8135d830_0 .net "core_req_to_core", 0 0, o0000022b8130a608;  0 drivers
+v0000022b8135bd50_0 .net "core_req_to_link1", 0 0, o0000022b8130a638;  0 drivers
+v0000022b8135bfd0_0 .net "core_req_to_link2", 0 0, o0000022b8130a668;  0 drivers
+v0000022b8135da10_0 .net "core_req_to_link3", 0 0, o0000022b8130a698;  0 drivers
+v0000022b8135bdf0_0 .net "core_req_to_link4", 0 0, o0000022b8130a6c8;  0 drivers
+v0000022b8135c110_0 .net "link1_gnt_from_core", 0 0, L_0000022b813604c0;  1 drivers
+v0000022b8135cf70_0 .net "link1_gnt_from_link2", 0 0, L_0000022b81360530;  1 drivers
+v0000022b8135c930_0 .net "link1_gnt_from_link3", 0 0, L_0000022b81360370;  1 drivers
+v0000022b8135d330_0 .net "link1_gnt_from_link4", 0 0, L_0000022b813605a0;  1 drivers
+v0000022b8135c610_0 .net "link1_gnt_to_core", 0 0, o0000022b8130a7b8;  0 drivers
+v0000022b8135cb10_0 .net "link1_gnt_to_link2", 0 0, o0000022b8130a7e8;  0 drivers
+v0000022b8135cbb0_0 .net "link1_gnt_to_link3", 0 0, o0000022b8130a818;  0 drivers
+v0000022b8135c1b0_0 .net "link1_gnt_to_link4", 0 0, o0000022b8130a848;  0 drivers
+v0000022b8135c570_0 .net "link1_req_from_core", 0 0, L_0000022b8135ff30;  1 drivers
+v0000022b8135ca70_0 .net "link1_req_from_link2", 0 0, L_0000022b81309e70;  1 drivers
+v0000022b8135db50_0 .net "link1_req_from_link3", 0 0, L_0000022b812c2b20;  1 drivers
+v0000022b8135c390_0 .net "link1_req_from_link4", 0 0, L_0000022b812c2cf0;  1 drivers
+v0000022b8135bf30_0 .net "link1_req_to_core", 0 0, o0000022b8130a938;  0 drivers
+o0000022b8130a968 .functor BUFZ 1, C4<z>; HiZ drive
+v0000022b8135c750_0 .net "link1_req_to_link1", 0 0, o0000022b8130a968;  0 drivers
+v0000022b8135c250_0 .net "link1_req_to_link2", 0 0, o0000022b8130a998;  0 drivers
+v0000022b8135d3d0_0 .net "link1_req_to_link3", 0 0, o0000022b8130a9c8;  0 drivers
+v0000022b8135cd90_0 .net "link1_req_to_link4", 0 0, o0000022b8130a9f8;  0 drivers
+v0000022b8135c2f0_0 .net "link2_gnt_from_core", 0 0, L_0000022b813606f0;  1 drivers
+v0000022b8135ccf0_0 .net "link2_gnt_from_link1", 0 0, L_0000022b81360610;  1 drivers
+v0000022b8135cc50_0 .net "link2_gnt_from_link3", 0 0, L_0000022b81360680;  1 drivers
+v0000022b8135d150_0 .net "link2_gnt_from_link4", 0 0, L_0000022b81360060;  1 drivers
+v0000022b8135d0b0_0 .net "link2_gnt_to_core", 0 0, o0000022b8130aae8;  0 drivers
+v0000022b8135ce30_0 .net "link2_gnt_to_link1", 0 0, o0000022b8130ab18;  0 drivers
+v0000022b8135d470_0 .net "link2_gnt_to_link3", 0 0, o0000022b8130ab48;  0 drivers
+v0000022b8135d010_0 .net "link2_gnt_to_link4", 0 0, o0000022b8130ab78;  0 drivers
+v0000022b8135c430_0 .net "link2_req_from_core", 0 0, L_0000022b812f4710;  1 drivers
+v0000022b8135c4d0_0 .net "link2_req_from_link1", 0 0, L_0000022b81309cb0;  1 drivers
+v0000022b8135d1f0_0 .net "link2_req_from_link3", 0 0, L_0000022b812c2c80;  1 drivers
+v0000022b8135d290_0 .net "link2_req_from_link4", 0 0, L_0000022b81360300;  1 drivers
+v0000022b8135c6b0_0 .net "link2_req_to_core", 0 0, o0000022b8130ac68;  0 drivers
+v0000022b8135c7f0_0 .net "link2_req_to_link1", 0 0, o0000022b8130ac98;  0 drivers
+o0000022b8130acc8 .functor BUFZ 1, C4<z>; HiZ drive
+v0000022b8135c890_0 .net "link2_req_to_link2", 0 0, o0000022b8130acc8;  0 drivers
+v0000022b8135d510_0 .net "link2_req_to_link3", 0 0, o0000022b8130acf8;  0 drivers
+v0000022b8135d5b0_0 .net "link2_req_to_link4", 0 0, o0000022b8130ad28;  0 drivers
+v0000022b8135d650_0 .net "link3_gnt_from_core", 0 0, L_0000022b81360140;  1 drivers
+v0000022b8135dfe0_0 .net "link3_gnt_from_link1", 0 0, L_0000022b813601b0;  1 drivers
+v0000022b8135f660_0 .net "link3_gnt_from_link2", 0 0, L_0000022b81360220;  1 drivers
+v0000022b8135e760_0 .net "link3_gnt_from_link4", 0 0, L_0000022b81360aa0;  1 drivers
+v0000022b8135f020_0 .net "link3_gnt_to_core", 0 0, o0000022b8130ae18;  0 drivers
+v0000022b8135fac0_0 .net "link3_gnt_to_link1", 0 0, o0000022b8130ae48;  0 drivers
+v0000022b8135e9e0_0 .net "link3_gnt_to_link2", 0 0, o0000022b8130ae78;  0 drivers
+v0000022b8135f520_0 .net "link3_gnt_to_link4", 0 0, o0000022b8130aea8;  0 drivers
+v0000022b8135e620_0 .net "link3_req_from_core", 0 0, L_0000022b812f4780;  1 drivers
+v0000022b8135eda0_0 .net "link3_req_from_link1", 0 0, L_0000022b81309d20;  1 drivers
+v0000022b8135ea80_0 .net "link3_req_from_link2", 0 0, L_0000022b81309ee0;  1 drivers
+v0000022b8135e080_0 .net "link3_req_from_link4", 0 0, L_0000022b813603e0;  1 drivers
+v0000022b8135f5c0_0 .net "link3_req_to_core", 0 0, o0000022b8130af98;  0 drivers
+v0000022b8135f700_0 .net "link3_req_to_link1", 0 0, o0000022b8130afc8;  0 drivers
+v0000022b8135e800_0 .net "link3_req_to_link2", 0 0, o0000022b8130aff8;  0 drivers
+o0000022b8130b028 .functor BUFZ 1, C4<z>; HiZ drive
+v0000022b8135dcc0_0 .net "link3_req_to_link3", 0 0, o0000022b8130b028;  0 drivers
+v0000022b8135e6c0_0 .net "link3_req_to_link4", 0 0, o0000022b8130b058;  0 drivers
+v0000022b8135e260_0 .net "link4_gnt_from_core", 0 0, L_0000022b81361360;  1 drivers
+v0000022b8135eb20_0 .net "link4_gnt_from_link1", 0 0, L_0000022b81360bf0;  1 drivers
+v0000022b8135ebc0_0 .net "link4_gnt_from_link2", 0 0, L_0000022b81361590;  1 drivers
+v0000022b8135e8a0_0 .net "link4_gnt_from_link3", 0 0, L_0000022b81360c60;  1 drivers
+v0000022b8135ec60_0 .net "link4_gnt_to_core", 0 0, o0000022b8130b148;  0 drivers
+v0000022b8135e940_0 .net "link4_gnt_to_link1", 0 0, o0000022b8130b178;  0 drivers
+v0000022b8135dd60_0 .net "link4_gnt_to_link2", 0 0, o0000022b8130b1a8;  0 drivers
+v0000022b8135f160_0 .net "link4_gnt_to_link3", 0 0, o0000022b8130b1d8;  0 drivers
+v0000022b8135e580_0 .net "link4_req_from_core", 0 0, L_0000022b81309bd0;  1 drivers
+v0000022b8135ed00_0 .net "link4_req_from_link1", 0 0, L_0000022b81309d90;  1 drivers
+v0000022b8135f7a0_0 .net "link4_req_from_link2", 0 0, L_0000022b812c2ab0;  1 drivers
+v0000022b8135ee40_0 .net "link4_req_from_link3", 0 0, L_0000022b812c2c00;  1 drivers
+v0000022b8135f0c0_0 .net "link4_req_to_core", 0 0, o0000022b8130b2c8;  0 drivers
+v0000022b8135e120_0 .net "link4_req_to_link1", 0 0, o0000022b8130b2f8;  0 drivers
+v0000022b8135eee0_0 .net "link4_req_to_link2", 0 0, o0000022b8130b328;  0 drivers
+v0000022b8135ef80_0 .net "link4_req_to_link3", 0 0, o0000022b8130b358;  0 drivers
+o0000022b8130b388 .functor BUFZ 1, C4<z>; HiZ drive
+v0000022b8135e440_0 .net "link4_req_to_link4", 0 0, o0000022b8130b388;  0 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "crossbar.v";
